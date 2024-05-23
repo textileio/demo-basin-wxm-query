@@ -1,11 +1,28 @@
 """Configs & command setup for query start time, end time, and verbose logging."""
 
-from argparse import ArgumentParser
+from argparse import ArgumentParser, ArgumentTypeError
+from datetime import datetime
 from json import load
+from time import mktime
 from typing import Tuple
 
 # Define global setting for verbose traceback logging
 log_traceback = True
+
+
+def parse_timestamp(timestamp: str) -> int:
+    """Parses a timestamp in either Unix or YYYY-MM-DD format."""
+    try:
+        if timestamp.isdigit():
+            return int(timestamp)
+        else:
+            dt = datetime.strptime(timestamp, "%Y-%m-%d")
+            unix_timestamp = int(mktime(dt.timetuple()))
+            return unix_timestamp
+    except ValueError as e:
+        raise ArgumentTypeError(
+            f"Invalid timestamp format: {timestamp}", e, ArgumentTypeError
+        )
 
 
 def command_setup() -> Tuple[int | None, int | None]:
@@ -24,15 +41,15 @@ def command_setup() -> Tuple[int | None, int | None]:
     parser = ArgumentParser(description="Fetch wxm vault data and run queries.")
     parser.add_argument(
         "--start",
-        type=int,
+        type=str,
         default=None,
-        help="Start unix timestamp for data range in (e.g., 1700438400)",
+        help="Start timestamp for data range in (unix or YYYY-MM-DD format)",
     )
     parser.add_argument(
         "--end",
-        type=int,
+        type=str,
         default=None,
-        help="End unix timestamp for data range in (e.g., 1700783999)",
+        help="End timestamp for data range in (unix or YYYY-MM-DD format)",
     )
     parser.add_argument(
         "--verbose",
@@ -44,7 +61,10 @@ def command_setup() -> Tuple[int | None, int | None]:
     # Parse the arguments for start and end time query ranges; also verbose logging
     # Default to `None` and let the queries use full range if no start/end
     args = parser.parse_args()
-    start, end, log_traceback = args.start, args.end, args.verbose
+    start_raw, end_raw, log_traceback = args.start, args.end, args.verbose
+    # If data in format YYYY-MM-DD, convert to unix timestamp
+    start = parse_timestamp(start_raw) if start_raw else None
+    end = parse_timestamp(end_raw) if end_raw else None
 
     return (start, end)
 

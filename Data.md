@@ -1,6 +1,6 @@
 # Data
 
-_Generated on **2024-04-08** for data in range **2024-03-31 00:00:00** to **2024-04-06 23:59:44**._
+_Generated on **2024-05-22** for data in range **2024-04-07 00:00:00** to **2024-04-15 07:00:00**._
 
 The schema for the raw data is as follows:
 
@@ -41,11 +41,11 @@ And three additional columns for run metadata:
 
 | Job Date   | Range Start   | Range End     | Number Of Devices | Cell Id Mode    | Total Precipitation | Temperature | Humidity | Precipitation Accumulated |
 |------------|---------------|---------------|-------------------|-----------------|---------------------|-------------|----------|---------------------------|
-| 2024-04-08 | 1711843200000 | 1712447984000 | 4960              | 871eda743ffffff | 140907800093.172    | 13.618      | 72.380   | 1177.486                  |
+| 2024-05-22 | 1712448000000 | 1713164400000 | 5020              | 871eda743ffffff | 143320857919.118    | 15.641      | 67.683   | 1002.887                  |
 
 | Wind Speed | Wind Gust | Wind Direction | Illuminance | Solar Irradiance | Fo Uv   | Uv Index | Precipitation Rate | Pressure |
 |------------|-----------|----------------|-------------|------------------|---------|----------|--------------------|----------|
-| 1.011      | 1.398     | 185.450        | 339687.419  | 2675.406         | 705.567 | 0.885    | 0.093              | 986.163  |
+| 0.957      | 1.342     | 185.869        | 341424.430  | 2688.661         | 832.969 | 1.049    | 0.054              | 993.208  |
 
 ## Precipitation accumulated maps
 
@@ -57,21 +57,21 @@ And three additional columns for run metadata:
 
 ![South America](./assets/maps/precipitation_map_south_america.png)
 
-### Asia
-
-![Asia](./assets/maps/precipitation_map_asia.png)
-
 ### Africa
 
 ![Africa](./assets/maps/precipitation_map_africa.png)
 
-### Australia
-
-![Australia](./assets/maps/precipitation_map_australia.png)
-
 ### Europe
 
 ![Europe](./assets/maps/precipitation_map_europe.png)
+
+### Asia
+
+![Asia](./assets/maps/precipitation_map_asia.png)
+
+### Australia
+
+![Australia](./assets/maps/precipitation_map_australia.png)
 
 ## Historical plots
 

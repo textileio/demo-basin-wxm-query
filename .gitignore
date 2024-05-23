@@ -1,6 +1,8 @@
 # Defaults
 __pycache__/
 build/
+.build/
+.benchmarks/
 dist/
 wheels/
 pip-wheel-metadata/

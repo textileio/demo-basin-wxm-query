@@ -84,10 +84,10 @@ To use default time ranges (the full dataset), run:
 make run
 ```
 
-Or, you can define a custom time range with `start` and `end` arguments (Unix epoch timestamps), which will be used to filter the data when queries are executed. Note: the timestamp range for the `wxm.weather_data_dev` vault starts on `1707436800`.
+Or, you can define a custom time range with `start` and `end` arguments (Unix epoch timestamps _or_ YYYY-MM-DD), which will be used to filter the data when queries are executed. Note: the timestamp range for the `wxm.weather_data_dev` vault starts on `1707436800`.
 
 ```sh
-make run start=1707436800 end=1707955200
+make run start=1707436800 end=2024-02-15
 ```
 
 This range also defines which events/data is fetched; the `cache.json` file will store all previously extracted events, so only new events will be fetched on subsequent runs.
@@ -135,4 +135,4 @@ Small note: If editing the README, please conform to the standard-readme specifi
 
 ## License
 
-MIT AND Apache-2.0, © 2021-2023 Textile Contributors
+MIT AND Apache-2.0, © 2021-2024 Textile Contributors
