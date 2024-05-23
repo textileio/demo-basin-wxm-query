@@ -1,6 +1,6 @@
 # Data
 
-_Generated on **2024-05-22** for data in range **2024-04-07 00:00:00** to **2024-04-15 07:00:00**._
+_Generated on **2024-05-22** for data in range **2024-04-16 00:00:00** to **2024-04-22 07:00:00**._
 
 The schema for the raw data is as follows:
 
@@ -41,11 +41,11 @@ And three additional columns for run metadata:
 
 | Job Date   | Range Start   | Range End     | Number Of Devices | Cell Id Mode    | Total Precipitation | Temperature | Humidity | Precipitation Accumulated |
 |------------|---------------|---------------|-------------------|-----------------|---------------------|-------------|----------|---------------------------|
-| 2024-05-22 | 1712448000000 | 1713164400000 | 5020              | 871eda743ffffff | 143320857919.118    | 15.641      | 67.683   | 1002.887                  |
+| 2024-05-22 | 1713225600000 | 1713769200000 | 5050              | 871eda743ffffff | 115145002238.506    | 12.456      | 70.934   | 1054.339                  |
 
 | Wind Speed | Wind Gust | Wind Direction | Illuminance | Solar Irradiance | Fo Uv   | Uv Index | Precipitation Rate | Pressure |
 |------------|-----------|----------------|-------------|------------------|---------|----------|--------------------|----------|
-| 0.957      | 1.342     | 185.869        | 341424.430  | 2688.661         | 832.969 | 1.049    | 0.054              | 993.208  |
+| 0.932      | 1.323     | 190.762        | 349498.295  | 2752.125         | 837.694 | 1.004    | 0.080              | 990.812  |
 
 ## Precipitation accumulated maps
 
