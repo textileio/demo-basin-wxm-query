@@ -1,6 +1,6 @@
 # Data
 
-_Generated on **2024-05-22** for data in range **2024-04-23 00:00:00** to **2024-04-29 07:00:00**._
+_Generated on **2024-05-22** for data in range **2024-04-30 00:00:00** to **2024-05-06 07:00:00**._
 
 The schema for the raw data is as follows:
 
@@ -39,13 +39,13 @@ And three additional columns for run metadata:
 
 ## Averages & cumulative metrics
 
-| Job Date   | Range Start   | Range End     | Number Of Devices | Cell Id Mode    | Total Precipitation | Temperature | Humidity | Precipitation Accumulated |
-|------------|---------------|---------------|-------------------|-----------------|---------------------|-------------|----------|---------------------------|
-| 2024-05-22 | 1713830400000 | 1714374000000 | 5093              | 871eda743ffffff | 122351783651.668    | 13.759      | 70.472   | 1114.528                  |
+| Job Date   | Range Start   | Range End     | Number Of Devices | Cell Id Mode    | Total Precipitation | Temperature  | Humidity | Precipitation Accumulated |
+|------------|---------------|---------------|-------------------|-----------------|---------------------|--------------|----------|---------------------------|
+| 2024-05-22 | 1714435200000 | 1714978800000 | 5114              | 871eda743ffffff | 138362663927.396    | -7717981.656 | 73.158   | 1265.789                  |
 
 | Wind Speed | Wind Gust | Wind Direction | Illuminance | Solar Irradiance | Fo Uv   | Uv Index | Precipitation Rate | Pressure |
 |------------|-----------|----------------|-------------|------------------|---------|----------|--------------------|----------|
-| 0.870      | 1.213     | 180.417        | 323348.462  | 2545.748         | 819.134 | 1.022    | 0.063              | 989.694  |
+| 0.817      | 1.130     | 177.856        | 293707.848  | 2312.202         | 830.740 | 1.083    | 0.095              | 989.016  |
 
 ## Precipitation accumulated maps
 
